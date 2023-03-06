@@ -9,7 +9,7 @@ namespace ConquestOne.Infrastructure.Queries
             this.Table = Map.GetYahooFinanceTable();
             this.Query = $@"
                 SELECT 
-                PET.[ID] AS [Id],
+                PET.[ID] AS [Dia],
                 CONVERT(VARCHAR(10), PET.[CL_DATE], 103) AS [DATE],
                 CONCAT('R$', PET.[CL_VALUE]) AS [Value],
                 CONCAT(PET.[CL_VARIATION_PREVIOUS_DATE], '%') AS [VariationPreviousDate],
