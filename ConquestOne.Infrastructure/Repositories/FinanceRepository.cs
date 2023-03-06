@@ -29,7 +29,6 @@ namespace ConquestOne.Infrastructure.Repositories
             List<PETR4AnalyticsDTO> analyticsDTO = new List<PETR4AnalyticsDTO>();
             DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
 
-
             var timestamp = json.Chart.Result[0].Timestamp[0];
 
             for (int i = 0; i < json.Chart.Result[0].Timestamp.Count; i++)

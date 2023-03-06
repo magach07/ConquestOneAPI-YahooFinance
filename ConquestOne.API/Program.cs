@@ -15,6 +15,11 @@ builder.Services.AddTransient<InsertReceiver>();
 
 var app = builder.Build();
 
+app.MapGet("YahooFinance/PETR4/GetInformations/", ([FromServices] IFinanceRepository repository) => 
+{
+    return repository.GetAll();
+});
+
 app.MapPost("/YahooFinance/PETR4/Insert/", ([FromServices]InsertReceiver receiver, [FromBody] List<PETR4Entity> dto) => 
 {
     return receiver.Action(dto);

@@ -33,8 +33,9 @@ GO
 =======================
 DOCUMENTAÇÃO DAS API's
 =======================
-(POST) '/YahooFinance/PETR4/Insert/' - API que consome os dados do Yahoo Finance, manipula e insere da forma correta no banco de dados apenas os campos necessários.
-(GET) '/YahooFinance/PETR4/Historic30Days/' - API que busca os dados no banco de dados e nos retorna as informações sobre as variações do PETR4 dos útlimos 30 dias.
+(GET) '/YahooFinance/PETR4/GetInformations/' - API que consume os dados do Yahoo Finance, nos retornando o JSON que será usado para inserir as informações na base de dados.
+(POST) '/YahooFinance/PETR4/Insert/' - Insere as informações retornadas pelo JSON na base de dados.
+(GET) '/YahooFinance/PETR4/Historic30Days/' - API que busca os dados no banco de dados e nos retorna as informações sobre as variações do PETR4 dos útlimos 30 dias de modo formatado.
 
 - Id: Identity, auto-incremental pelo banco de dados.
 - Date: Data analisada.
