@@ -37,7 +37,7 @@ DOCUMENTAÇÃO DAS API's
 (POST) '/YahooFinance/PETR4/Insert/' - Insere as informações retornadas pelo JSON na base de dados.
 (GET) '/YahooFinance/PETR4/Historic30Days/' - API que busca os dados no banco de dados e nos retorna as informações sobre as variações do PETR4 dos útlimos 30 dias de modo formatado.
 
-- Id: Identity, auto-incremental pelo banco de dados.
+- Dia: Identity, auto-incremental pelo banco de dados.
 - Date: Data analisada.
 - Value: Valor (em BRL) da ação no dia.
 - VariationPreviousDate: Variação (em %) do valor da ação em relação ao dia anterior (D-1).
